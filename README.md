@@ -2,8 +2,9 @@
 
 Aplicación en React que se conecta a la API de Nimble Gravity para listar posiciones abiertas y enviar postulaciones.
 
-Desarrollado por **Sofia Ramos** <a href="https://linkedin.com/in/sofiramos22"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-
+<p>
+    Desarrollado por **Sofia Ramos** <a href="https://linkedin.com/in/sofiramos22"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+</p>
 ---
 
 ## Datos para testear
