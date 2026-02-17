@@ -9,6 +9,10 @@ Aplicación en React que se conecta a la API de Nimble Gravity para listar posic
 <img width="1856" height="907" alt="image" src="https://github.com/user-attachments/assets/1f73a76d-7373-4b65-bfce-04831ccdb2f7" />
 
 ---
+
+<img width="1858" height="903" alt="image" src="https://github.com/user-attachments/assets/e523e81b-3782-42d2-b1ca-73b081f28066" />
+
+---
 ## Datos para testear
 
 | Campo | Valor |
