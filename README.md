@@ -1,16 +1,101 @@
-# React + Vite
+# Nimble Gravity — Bot Filter Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini aplicación en React que se conecta a la API de Nimble Gravity para listar posiciones abiertas y enviar postulaciones.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Datos para testear
 
-## React Compiler
+| Campo | Valor |
+|---|---|
+| **Email** | `ramossofiamagali679@gmail.com` |
+| **Repo** | `https://github.com/SofiRms/nimble_gravity` |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Tecnología | Uso |
+|---|---|
+| **React 19** | UI y manejo de estado |
+| **Vite** | Bundler y dev server |
+| **Tailwind CSS v3** | Estilos |
+| **Lucide React** | Iconografía |
+
+---
+
+## Estructura del proyecto
+
+```
+src/
+├── App.jsx                       
+├── hooks/
+│   └── useJobs.js                  
+├── services/
+│   ├── candidateService.js          
+│   └── jobsService.js               
+├── components/
+│   ├── CandidateForm.jsx           
+│   ├── CandidateCard.jsx          
+│   ├── JobsList.jsx                 
+│   ├── JobCard.jsx                  
+│   └── StatusBadge.jsx            
+└── utils/
+    ├── email-regex.js            
+    ├── github-url.js            
+    └── sanitize.js                  
+```
+
+---
+
+##  Cómo ejecutar el proyecto
+
+```bash
+# Instalar dependencias
+npm install
+
+# Instalar y configurar Tailwind v3
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
+# Correr en desarrollo
+npm run dev
+```
+
+Asegurarse de que `src/index.css` tenga:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Y que `tailwind.config.js` tenga:
+
+```js
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: { extend: {} },
+  plugins: [],
+}
+```
+
+---
+
+## 🔄 Flujo de la aplicación
+
+1. **Verificar candidato** — ingresás el email  a testear y la app consulta la API para obtener aus datos (`uuid`, `candidateId`, `applicationId`)
+2. **Ingresar repo** — una vez verificado el candidato, debe proceder a ingresar la URL del repositorio de GitHub y validarla
+3. **Postularse** — cada posición tiene un botón Submit que envía el POST con el body completo a la API
+
+---
+
+## API
+
+Base URL: `https://botfilter-h5ddh6dye8exb7ha.centralus-01.azurewebsites.net`
+
+| Método | Endpoint | Descripción |
+|---|---|---|
+| `GET` | `/api/candidate/get-by-email?email=` | Obtener datos del candidato |
+| `GET` | `/api/jobs/get-list` | Listar posiciones disponibles |
+| `POST` | `/api/candidate/apply-to-job` | Enviar postulación |
