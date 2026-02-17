@@ -1,11 +1,5 @@
 # Nimble Gravity — Bot Filter Challenge
 
-Desarrollado por **Sofia Ramos**
-
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=white&labelColor=20232a)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3-38BDF8?style=flat&logo=tailwindcss&logoColor=white&labelColor=0f172a)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black&labelColor=1e1e1e)
-
 Mini aplicación en React que se conecta a la API de Nimble Gravity para listar posiciones abiertas y enviar postulaciones.
 
 ---
@@ -105,3 +99,10 @@ Base URL: `https://botfilter-h5ddh6dye8exb7ha.centralus-01.azurewebsites.net`
 | `GET` | `/api/candidate/get-by-email?email=` | Obtener datos del candidato |
 | `GET` | `/api/jobs/get-list` | Listar posiciones disponibles |
 | `POST` | `/api/candidate/apply-to-job` | Enviar postulación |
+
+
+Desarrollado por **Sofia Ramos**
+
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=white&labelColor=20232a)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3-38BDF8?style=flat&logo=tailwindcss&logoColor=white&labelColor=0f172a)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black&labelColor=1e1e1e)
