@@ -3,7 +3,11 @@
 Aplicación en React que se conecta a la API de Nimble Gravity para listar posiciones abiertas y enviar postulaciones.
 
 ---
+<img width="1859" height="888" alt="image" src="https://github.com/user-attachments/assets/74e7a9d9-e773-4b95-8220-bbf32d06681d" />
 
+<img width="1856" height="907" alt="image" src="https://github.com/user-attachments/assets/1f73a76d-7373-4b65-bfce-04831ccdb2f7" />
+
+---
 ## Datos para testear
 
 | Campo | Valor |
