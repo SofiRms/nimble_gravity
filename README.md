@@ -30,7 +30,9 @@ Aplicación en React que se conecta a la API de Nimble Gravity para listar posic
 src/
 ├── App.jsx                       
 ├── hooks/
-│   └── useJobs.js                  
+│   └── useJobs.js
+├── config/
+│   └── api.js                       
 ├── services/
 │   ├── candidateService.js          
 │   └── jobsService.js               
@@ -42,8 +44,7 @@ src/
 │   └── StatusBadge.jsx            
 └── utils/
     ├── email-regex.js            
-    ├── github-url.js            
-    └── sanitize.js                  
+    ├── github-url.js                     
 ```
 
 ---
